@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .embed-container { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; text-align:center}
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed { position:absolute; top:0; left:0; width:100%; height:100%; }
+        .header{
+            height: 4rem;
+        }
+
+        .menu h1{
+            margin: 2rem 0;
+        }
+
+        .menu-portfolio{
+            border-left-width: 0;
+            border-radius: 0;
+            margin: 0;
+            
+        }
+        .menu-ul{
+            margin-left: 1rem;
+        }
+
+        #home .content {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('media/img/home.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        #home .content>div{
+            vertical-align: middle;
+        }
+        #home .content{
+            width: 100vw;
+            height: 100vh;
+        }
+        #home .content::before{
+            display: inline-block;
+            content: "";
+            height: 40%;
+            vertical-align: middle;
+        }
+        #home .content>div{
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+        }
+        #home .content h1{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        #home .content p{
+            font-size: 2rem;
+        }
+
+
+        #info .content{
+            margin-top: 5rem;
+        }
+
+        #project .content{
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div data-theme="b">
+        <!-- project -->
+        <div data-role="page" id="project">
+            <!-- panel -->
+            <div data-role="panel" id="menu-project" class="menu" data-display="overlay" data-theme="b">
+                <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+                <hr>
+                <h1>메뉴</h1>
+                <ul data-role="listview">
+                    <li><a href="index.html">홈</a></li>
+                    <div data-role="collapsible" data-insert="false" class="menu-protfolio">
+                        <h3>포트폴리오</h3>
+                        <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                            <li><a href="info.html">포트폴리오</a></li>
+                            <li><a href="profile.html">profile</a></li>
+                            <li><a href="about.html">about me</a></li>
+                            <li><a href="skills.html">skills</a></li>
+                            <li><a href="connect.html">connect</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="" data-rel="close"  style="background-color: #1c1c1c;">프로젝트</a></li>
+
+                </ul>
+                <div data-role="collapsible" data-insert="false">
+                    <a href="project.html"><h3>프로젝트</h3></a>
+                </div>
+            </div>
+            <!-- panel end -->
+            <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true" class="header">
+                <a href="#menu-project"><input type="button" value="" data-icon="bullets" data-iconpos="notext"></a>
+                <h1>홈</h1>
+            </div>
+            <div data-role="content" class="content">
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                            
+                            <div class="embed-container" style="">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3ACfq8gGXxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">인공지능을 이용한 동아리 출입 관리 시스템</h5>
+                              <p class="card-text">
+                                jetson-nano에서 얼굴인식과 도어락 제어, 출입기록을 저장합니다 <br>
+                                firebase에서 출입기록을 데이터와 회원정보를 저장하며 <br>
+                                web에서 출입기록을 차트로 표현하며 회원정보를 관리합니다
+                            </p>
+                              <a href="#" class="btn btn-primary" style="color: white;">자세히 알아보기</a>
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="card">
+                            <video src="media/video/android.mp4" controls></video>
+                            <div class="card-body">
+                              <h5 class="card-title">칵테일 레시피 앱</h5>
+                              <p class="card-text">
+                                사용자가 원하는 칵테일을 쉽게 검색할 수 있게 하고<br>
+                                사용자들끼리 정보를 교환할수 있는 앱입니다
+                              </p>
+                              <a href="#" class="btn btn-primary" style="color: white;">자세히 알아보기</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">홈</a></li>
+                        <li><a href="info.html" data-icon="info">포트폴리오</a></li>
+                        <li><a href="project.html" data-icon="cloud" class="ui-btn-active ui-state-persist">프로젝트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- project end -->
+        
+        
+    </div>
+    
+  <script src="js/typed.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

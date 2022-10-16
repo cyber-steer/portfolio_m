@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .tabs{
+            margin-top: 5rem;
+        }
+        h5{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div data-theme="b">
+        <!-- home -->
+        <div data-role="page" data-theme="b" id="profile">
+            <!-- panel -->
+            <div data-role="panel" id="menu-home" class="menu" data-display="overlay" data-theme="b">
+                <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+                <hr>
+                <h1>메뉴</h1>
+                <ul data-role="listview">
+                    <li><a href="index.html">home</a></li>
+                    <div data-role="collapsible" data-insert="false" class="menu-protfolio">
+                        <h3 style="background-color: #1c1c1c;">포트폴리오</h3>
+                        <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                            <li ><a href="info.html"> 포트폴리오</a></li>
+                            <li><a href="profile.html">profile</a></li>
+                            <li><a href="about.html">about me</a></li>
+                            <li><a href="skills.html" style="background-color: #1c1c1c;" data-rel="close">skills</a></li>
+                            <li><a href="connect.html">connect</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="project.html">프로젝트</a></li>
+                </ul>
+            </div>
+            <!-- panel end -->
+            <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true" class="header">
+                <a href="#menu-home"><input type="button" value="" data-icon="bullets" data-iconpos="notext"></a>
+                <h1>홈</h1>
+            </div>
+            <div data-role="content" data-theme="b" class="content">
+                <div class="pure-menu pure-menu-horizontal" style="text-align: center;">
+                    <ul class="pure-menu-list" style="margin: 5rem 0 1rem 0;">
+                        <li class="pure-menu-item">
+                            <a href="profile.html" class="pure-menu-link">Profile</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="about.html" class="pure-menu-link">About Me</a>
+                        </li>
+                        <li class="pure-menu-item pure-menu-selected">
+                            <a href="skills.html" class="pure-menu-link">Skills</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="connect.html" class="pure-menu-link">connect</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="margin: 0 1rem;">
+                    <div data-role="collapsible">
+                        <h4>Language</h4>
+                        <h5 style="color: white;">C 30%</h5>
+                        <progress class="progress" value="30" max="100">30%</progress>
+                        <h5 style="color: white;">Java 50%</h5>
+                        <progress class="progress" value="50" max="100">50%</progress>
+                        <h5 style="color: white;">Python 55%</h5>
+                        <progress class="progress" value="55" max="100">55%</progress>
+                        <h5 style="color: white;">Javascript 40%</h5>
+                        <progress class="progress" value="40" max="100">40%</progress>
+                    </div>
+                    <div data-role="collapsible">
+                        <h4>Front</h4>
+                        <h5 style="color: white;">html 50%</h5>
+                        <progress class="progress" value="50" max="100">50%</progress>
+                        <h5 style="color: white;">css 40%</h5>
+                        <progress class="progress" value="40" max="100">40%</progress>
+                    </div>
+                    <div data-role="collapsible">
+                        <h4>Back</h4>
+                        <h5 style="color: white;">JSP 80%</h5>
+                        <progress class="progress" value="80" max="100">80%</progress>
+                        <h5 style="color: white;">Firebase 40%</h5>
+                        <progress class="progress" value="40" max="100">40%</progress>
+                        <h5 style="color: white;">OracleDB 30%</h5>
+                        <progress class="progress" value="30" max="100">30%</progress>
+                        <h5 style="color: white;">MariaDb 60%</h5>
+                        <progress class="progress" value="60" max="100">60%</progress>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">홈</a></li>
+                        <li><a href="index.html#info" data-icon="info" class="ui-btn-active ui-state-persist">포트폴리오</a></li>
+                        <li><a href="project.html" data-icon="cloud">프로젝트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- home end -->
+    </div>
+</body>
+</html>

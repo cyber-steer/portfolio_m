@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .tabs{
+            margin-top: 5rem;
+        }
+        .content{
+            text-align: center;
+
+        }
+        .content img{
+            margin-bottom: 2rem;
+            width: 80vw;
+        }
+        .row .title{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div data-theme="b">
+        <!-- home -->
+        <div data-role="page" data-theme="b" id="profile">
+            <!-- panel -->
+            <div data-role="panel" id="menu-home" class="menu" data-display="overlay" data-theme="b">
+                <a href="" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="close"></a>
+                <hr>
+                <h1>메뉴</h1>
+                <ul data-role="listview">
+                    <li><a href="index.html">home</a></li>
+                    <div data-role="collapsible" data-insert="false" class="menu-protfolio">
+                        <h3 style="background-color: #1c1c1c;">포트폴리오</h3>
+                        <ul data-role="listview" class="menu-ul" style="margin-left: 1rem;">
+                            <li ><a href="info.html"> 포트폴리오</a></li>
+                            <li><a href="profile.html" style="background-color: #1c1c1c;" data-rel="close">profile</a></li>
+                            <li><a href="about.html">about me</a></li>
+                            <li><a href="skills.html">skills</a></li>
+                            <li><a href="connect.html">connect</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="project.html">프로젝트</a></li>
+                </ul>
+            </div>
+            <!-- panel end -->
+            <div data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true" class="header">
+                <a href="#menu-home"><input type="button" value="" data-icon="bullets" data-iconpos="notext"></a>
+                <h1>홈</h1>
+            </div>
+            <div data-role="content" data-theme="b" class="content">
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a class="active" href="profile.html">Profile</a></li>
+                        <li class="tab"><a href="about.html">About Me</a></li>
+                        <li class="tab"><a href="skills.html">Skills</a></li>
+                        <li class="tab"><a href="connect.html">Connect</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col s12"><img src="media/img/profile.jpg" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col s6 title">이름</div>
+                    <div class="col s6">장성익</div>
+                </div>
+                <div class="row">
+                    <div class="col s6 title">직업</div>
+                    <div class="col s6">벡엔드 개발자</div>
+                </div>
+                <div class="row">
+                    <div class="col s6 title">나이</div>
+                    <div class="col s6">24</div>
+                </div>
+                <div class="row">
+                    <div class="col s6 title">거주지</div>
+                    <div class="col s6">부산</div>
+                </div>
+            
+            </div>
+            <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="b">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">홈</a></li>
+                        <li><a href="info.html" data-icon="info" class="ui-btn-active ui-state-persist">포트폴리오</a></li>
+                        <li><a href="project.html" data-icon="cloud">프로젝트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- home end -->
+    </div>
+    <script>
+        window.onload()=window.location.reload();
+    </script>
+</body>
+</html>
