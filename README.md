@@ -9,7 +9,7 @@
 [pure.css](https://purecss.io/) <br>
 
 # 사이트맵
-![레이아웃](https://github.com/cyber-steer/media/markdown/sitemap.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/sitemap.png)
 
 # 화면
 ![화면](https://github.com/cyber-steer/media/markdown/view.png)
@@ -54,7 +54,7 @@
 
 # bootstrap 사용
 
-![프로젝트](https://github.com/cyber-steer/media/markdown/project_bootstrap.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/project_bootstrap.png)
 
 ```html
 <div class="container text-center">
@@ -92,7 +92,7 @@ row는 한 행을 뜻하며 col-sm-4는 행의 크기를 12로 잡고 셀 크기
 
 # materialize 사용
 
-![profile](https://github.com/cyber-steer/media/markdown/profile_materialize.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/profile_materialize.png)
 
 ```html
 <div class="nav-content">
@@ -123,7 +123,7 @@ materialize에서 지원하는 grid입니다
 
 [참조](https://materializecss.com/grid.html) <br>
 
-![profile](https://github.com/cyber-steer/media/markdown/about_materialize.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/about_materialize.png)
 ```html
 <div class="divider"></div>
 <div class="section">
@@ -147,7 +147,7 @@ section안에 h5가 제목 p가 내용입니다
 [참조](https://materializecss.com/grid.html) <br>
 
 # bulma 사용
-![profile](https://github.com/cyber-steer/media/markdown/skills_bulma.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/skills_bulma.png)
 ```html
 <progress class="progress" value="15" max="100">15%</progress>
 ```
@@ -155,7 +155,7 @@ section안에 h5가 제목 p가 내용입니다
 
 [참조](https://bulma.io/documentation/elements/progress/) <br>
 
-![profile](https://github.com/cyber-steer/media/markdown/content_bulma.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/content_bulma.png)
 ```html
 <div class="columns">
     <div class="column is-4">
@@ -191,7 +191,7 @@ bulma에서 카드 사용법입니다
 
 
 # fure 사용
-![profile](https://github.com/cyber-steer/media/markdown/skills_fure.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/skills_fure.png)
 ```html
 <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
