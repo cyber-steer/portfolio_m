@@ -13,23 +13,23 @@
 
 # 페이지별 css framework 사용 현황
 - index.html
- + jquery mobile
+  + jquery mobile
 - info.html
- + jquery mobile
+  + jquery mobile
 - project.html
- + jquery mobile
- + bootstrap
+  + jquery mobile
+  + bootstrap
 - profile.html
- + jquery mobile
- + materializecss
+  + jquery mobile
+  + materializecss
 - about.html
- + jquery mobile
- + bootstrap
+  + jquery mobile
+  + bootstrap
 - skills.html
- + jquery mobile
- + bulma
- + pure.css
+  + jquery mobile
+  + bulma
+  + pure.css
 - connect.html
- + jquery mobile
- + bulma
- + bootstrap
+  + jquery mobile
+  + bulma
+  + bootstrap
