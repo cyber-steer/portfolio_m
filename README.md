@@ -3,7 +3,7 @@
 
 # 사용한 css framework
 [jquery mobile](https://jquerymobile.com/) <br>
-[getbootstrap](https://getbootstrap.com/) <br>
+[bootstrap](https://getbootstrap.com/) <br>
 [materializecss](https://materializecss.com/) <br>
 [bulma](https://bulma.io/) <br>
 [pure.css](https://purecss.io/) <br>
@@ -15,8 +15,21 @@
 - index.html
 + jquery mobile
 - info.html
++ jquery mobile
 - project.html
++ jquery mobile
++ bootstrap
 - profile.html
++ jquery mobile
++ materializecss
 - about.html
++ jquery mobile
++ bootstrap
 - skills.html
++ jquery mobile
++ bulma
++ pure.css
 - connect.html
++ jquery mobile
++ bulma
++ bootstrap
