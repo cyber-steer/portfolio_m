@@ -3,16 +3,18 @@
 
 # 사용한 css framework
 [jquery mobile](https://jquerymobile.com/) <br>
+[Apache ECharts](https://echarts.apache.org/en/index.html) <br>
 [bootstrap](https://getbootstrap.com/) <br>
 [materializecss](https://materializecss.com/) <br>
 [bulma](https://bulma.io/) <br>
 [pure.css](https://purecss.io/) <br>
 
 # 사이트맵
+
 ![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/sitemap.png)
 
 # 화면
-![화면](https://github.com/cyber-steer/media/markdown/view.png)
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/view.png)
 
 # 페이지별 css framework 사용 현황
 - index.html
@@ -32,6 +34,7 @@
   + jquery mobile
   + bulma
   + pure.css
+  + Apache ECharts
 - connect.html
   + jquery mobile
   + bulma
@@ -51,6 +54,56 @@
 </div>
 ```
 모든 페이지에서 기본적으로 jquery mobile 구조를 사용
+
+# Apache ECharts 사용
+![레이아웃](https://github.com/cyber-steer/portfolio_m/blob/main/media/img/markdown/chart.png)
+```html
+<div id="Language" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+```
+```javascript
+let chartDom = document.getElementById('Language');
+let myChart = echarts.init(chartDom);
+let option;
+option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+        type: 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+        type: 'category',
+        data: ['C', 'Java', 'Python', 'Javascript'],
+        axisTick: {
+            alignWithLabel: true
+        }
+        }
+    ],
+    yAxis: [
+        {
+        type: 'value'
+        }
+    ],
+    series: [
+        {
+        name: 'Direct',
+        type: 'bar',
+        barWidth: '60%',
+        data: [30, 60, 65, 60]
+        }
+    ]
+};
+option && myChart.setOption(option);
+```
+[참조](https://echarts.apache.org/examples/en/editor.html?c=bar-tick-align) <br>
+
 
 # bootstrap 사용
 

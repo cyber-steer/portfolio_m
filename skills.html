@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 
@@ -67,36 +68,32 @@
                     </ul>
                 </div>
                 <div style="margin: 0 1rem;">
-                    <div data-role="collapsible">
-                        <h4>Language</h4>
-                        <h5 style="color: white;">C 30%</h5>
-                        <progress class="progress" value="30" max="100">30%</progress>
-                        <h5 style="color: white;">Java 50%</h5>
-                        <progress class="progress" value="50" max="100">50%</progress>
-                        <h5 style="color: white;">Python 55%</h5>
-                        <progress class="progress" value="55" max="100">55%</progress>
-                        <h5 style="color: white;">Javascript 40%</h5>
-                        <progress class="progress" value="40" max="100">40%</progress>
-                    </div>
-                    <div data-role="collapsible">
-                        <h4>Front</h4>
-                        <h5 style="color: white;">html 50%</h5>
-                        <progress class="progress" value="50" max="100">50%</progress>
-                        <h5 style="color: white;">css 40%</h5>
-                        <progress class="progress" value="40" max="100">40%</progress>
-                    </div>
-                    <div data-role="collapsible">
-                        <h4>Back</h4>
-                        <h5 style="color: white;">JSP 80%</h5>
-                        <progress class="progress" value="80" max="100">80%</progress>
-                        <h5 style="color: white;">Firebase 40%</h5>
-                        <progress class="progress" value="40" max="100">40%</progress>
-                        <h5 style="color: white;">OracleDB 30%</h5>
-                        <progress class="progress" value="30" max="100">30%</progress>
-                        <h5 style="color: white;">MariaDb 60%</h5>
-                        <progress class="progress" value="60" max="100">60%</progress>
-                    </div>
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>Language</h3>
+                        <div id="Language" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>Database</h3>
+                        <div id="Database" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>Stylesheet</h3>
+                        <div id="Stylesheet" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>MarkUp</h3>
+                        <div id="MarkUp" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>Platform</h3>
+                        <div id="Platform" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
+                    <div data-role="collapsible" data-inset="false">
+                        <h3>API</h3>
+                        <div id="API" style="width: 80vw;height:400px; margin: 0 auto;"></div>
+                    </div><!-- /collapsible -->
                 </div>
+                
             </div>
             <div data-role="footer" data-position="fixed" data-fullscreen="true" data-theme="b">
                 <div data-role="navbar">
@@ -110,5 +107,259 @@
         </div>
         <!-- home end -->
     </div>
+    <script type="text/javascript">
+        let chartDom = document.getElementById('Language');
+        let myChart = echarts.init(chartDom);
+        let option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['C', 'Java', 'Python', 'Javascript'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [30, 60, 65, 60]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+        chartDom = document.getElementById('Database');
+        myChart = echarts.init(chartDom);
+        option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['Oracle DB', 'Maria DB'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [30, 35]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+        chartDom = document.getElementById('Stylesheet');
+        myChart = echarts.init(chartDom);
+        option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['css','Sass', 'scss'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [60, 3 , 3]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+        chartDom = document.getElementById('MarkUp');
+        myChart = echarts.init(chartDom);
+        option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['HTML', 'markdown'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [80, 70]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+        chartDom = document.getElementById('Platform');
+        myChart = echarts.init(chartDom);
+        option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['Windows', 'Linux', 'Android'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [60, 30, 45]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+        chartDom = document.getElementById('API');
+        myChart = echarts.init(chartDom);
+        option;
+        option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+            type: 'category',
+            data: ['WeatherAPI', 'Dlib', 'Firebase','Telegram'],
+            axisTick: {
+                alignWithLabel: true
+            }
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value'
+            }
+        ],
+        series: [
+            {
+            name: 'Direct',
+            type: 'bar',
+            barWidth: '60%',
+            data: [60, 50, 35, 40]
+            }
+        ]
+        };
+
+        option && myChart.setOption(option);
+        //----------------------------------------------------------------------
+    </script>
 </body>
 </html>
